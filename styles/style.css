@@ -1,5 +1,6 @@
 body {
   font-family: helvetica, arial, sans-serif;
+  height: 100vh;
 }
 
 h1 {
@@ -8,11 +9,13 @@ h1 {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   background-color: #eee;
+  position: absolute;
   width: 15%;
   top: 0px;
-  position: absolute;
-  height: 100%;
+  height: 100vh;
   padding: 10px;
 }
 
@@ -25,19 +28,34 @@ h1 {
 }
 
 .plant-holder {
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
   position: relative;
-  height: 13%;
-  left: -10px;
+  height: 100vh;
 }
 
 .plant {
+  align-content: center;
+  align-items: center;
   position: absolute;
-  max-width: 150%;
-  max-height: 150%;
+  padding: 10%;
+  max-width: 100%;
+  max-height: 100%;
   z-index: 2;
 }
 
+#terrarium {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 20vw;
+}
+
 .jar-top {
+  display: flex;
   width: 50%;
   height: 5%;
   background: #d1e1df;
@@ -49,10 +67,11 @@ h1 {
 }
 
 .jar-walls {
+  display: flex;
   width: 60%;
   height: 80%;
   background: #d1e1df;
-  border-radius: 3rem;
+  border-radius: 5%;
   position: absolute;
   bottom: 0.5%;
   left: 20%;
@@ -61,32 +80,45 @@ h1 {
 }
 
 .jar-glossy-long {
+  display: flex;
   width: 5%;
   height: 30%;
-  background-color: lightcyan;
-  /* filter: brightness(10); */
-  border-radius: 1rem;
+  background: lightcyan;
+  border-radius: 1%;
   position: relative;
-  bottom: -50%;
-  left: 10%;
+  bottom: -35%;
+  left: 8%;
   opacity: 0.9;
   z-index: 3;
 }
 
 .jar-glossy-short {
+  display: flex;
+  width: 5%;
+  height: 7%;
+  background: lightcyan;
+  border-radius: 1%;
+  position: relative;
+  bottom: -15%;
+  left: 8%;
+  opacity: 0.9;
+  z-index: 3;
+}
+
+/* .jar-glossy-short {
   width: 5%;
   height: 7%;
   background-color: lightcyan;
-  /* filter: brightness(10); */
   border-radius: 1rem;
   position: relative;
   bottom: -7%;
   left: 10%;
   opacity: 0.9;
   z-index: 3;
-}
+} */
 
 .jar-bottom {
+  display: flex;
   width: 50%;
   height: 1%;
   background: #d1e1df;
@@ -97,6 +129,7 @@ h1 {
 }
 
 .dirt {
+  display: flex;
   width: 60%;
   height: 5%;
   background: #3a241d;
