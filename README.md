@@ -1,3 +1,3 @@
-# TERRARIUM
+# Terrarium
 
-Terrarium made of HTML, CSS and JS
+Terrarium made of HTML, CSS and JS.
