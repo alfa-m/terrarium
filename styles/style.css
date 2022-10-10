@@ -1,13 +1,18 @@
 body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   font-family: helvetica, arial, sans-serif;
 }
 
 h1 {
   color: #3a241d;
-  text-align: center;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: #eee;
   width: 15%;
   top: 0px;
@@ -25,15 +30,19 @@ h1 {
 }
 
 .plant-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   height: 13%;
-  left: -10px;
+  /* left: -10px; */
 }
 
 .plant {
+  display: flex;
   position: absolute;
-  max-width: 150%;
-  max-height: 150%;
+  max-width: 130%;
+  max-height: 130%;
   z-index: 2;
 }
 
@@ -64,7 +73,6 @@ h1 {
   width: 5%;
   height: 30%;
   background-color: lightcyan;
-  /* filter: brightness(10); */
   border-radius: 1rem;
   position: relative;
   bottom: -50%;
@@ -77,7 +85,6 @@ h1 {
   width: 5%;
   height: 7%;
   background-color: lightcyan;
-  /* filter: brightness(10); */
   border-radius: 1rem;
   position: relative;
   bottom: -7%;
